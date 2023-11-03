@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="left"></div>
+
+        <div id="right">
+            <h1>Sign Up</h1>
+            <form action="/submit" method="post" id="signUp">
+                <div id="formLeft">
+                    <label for="firstName" class="label">FIRST NAME</label>
+                    <input type="text"  id="firstName" class="input" required>
+
+                    <label for="email" class="label"> EMAIL</label>
+                    <input type="email"  id="email" class="input" required>
+
+                    <label for="password" class="label"> PASSWORD</label>
+                    <input type="password"  id="password" class="input" required>
+
+                    <input type="submit" value="Create Account" id="submit">
+
+                </div>
+                <div id="formRight">
+                    <label for="lastName" class="label">LAST NAME</label>
+                    <input type="text"  id="lastName" class="input" required>
+
+                    <label for="phoneNumber" class="label"> PHONE NUMBER</label>
+                    <input type="text"  id="phoneNumber" class="input" required>
+
+                    <label for="confirmPassword" class="label">CONFIRM PASSWORD</label>
+                    <input type="password"  id="confirmPassword" class="input" required>
+                </div>
+            </form>
+            <div id="bottomText">Already have an account? <a href="./index.html" id="login">Login</a></div>
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
